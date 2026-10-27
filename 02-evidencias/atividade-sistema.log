@@ -1,0 +1,5 @@
+Oct 27 09:17:03 ubuntu-server audit[2201]: USER_CMD user=felipe command="whoami"
+Oct 27 09:17:18 ubuntu-server audit[2202]: USER_CMD user=felipe command="id"
+Oct 27 09:17:42 ubuntu-server audit[2203]: USER_CMD user=felipe command="sudo cat /etc/shadow"
+Oct 27 09:18:05 ubuntu-server audit[2204]: USER_CMD user=felipe command="crontab -l"
+Oct 27 09:23:10 ubuntu-server audit[2205]: USER_CMD user=analyst command="whoami"
