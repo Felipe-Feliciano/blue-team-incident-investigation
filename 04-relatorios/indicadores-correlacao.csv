@@ -1,0 +1,2 @@
+﻿ip,quantidade_falhas,inicio_falhas,fim_falhas,login_aceito,usuario,horario_login,classificacao,justificativa
+192.168.115.30,4,2026-10-27 09:14:02,2026-10-27 09:15:01,Sim,felipe,2026-10-27 09:16:22,Requer investigacao,Falhas SSH seguidas por login aceito do mesmo IP na janela analisada.

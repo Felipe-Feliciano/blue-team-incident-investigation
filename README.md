@@ -52,25 +52,38 @@ O script `05-scripts/correlacionar_eventos.py`:
 
 A correlação é um indicador para investigação adicional. Ela não comprova que o acesso foi indevido nem que os comandos registrados foram executados com sucesso.
 
+
 ## Como executar
 
-Gerar a linha do tempo:
+### 1. Gerar a linha do tempo
 
 ```bash
 python3 05-scripts/gerar_linha_tempo.py
 ```
 
-Executar a correlação:
+### 2. Executar a correlação de eventos
 
 ```bash
 python3 05-scripts/correlacionar_eventos.py
 ```
 
-Executar os testes automatizados:
+### 3. Exportar os indicadores para CSV
+
+```bash
+python3 05-scripts/exportar_relatorio_csv.py
+```
+
+O relatório será salvo em `04-relatorios/indicadores-correlacao.csv`, podendo ser aberto no Excel ou importado para o Power BI.
+
+### 4. Executar os testes automatizados
 
 ```bash
 python3 -m pytest -v 06-testes/
 ```
+
+**Resultado atual:** 9 testes aprovados.
+
+Os testes validam a correlação de eventos, a identificação de comandos registrados, a geração da linha do tempo e a exportação do CSV.
 
 ## Testes
 
