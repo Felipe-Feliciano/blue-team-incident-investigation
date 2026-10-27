@@ -75,6 +75,14 @@ python3 05-scripts/exportar_relatorio_csv.py
 
 O relatório será salvo em `04-relatorios/indicadores-correlacao.csv`, podendo ser aberto no Excel ou importado para o Power BI.
 
+### Gerar o relatório final de investigação
+
+```bash
+python3 05-scripts/gerar_relatorio_final.py
+```
+
+O relatório consolidado será salvo em `04-relatorios/relatorio-final-automatico.md`. Ele reúne o resumo executivo, os indicadores correlacionados, a linha do tempo, a atividade registrada, as recomendações e as limitações da análise.
+
 ### 4. Executar os testes automatizados
 
 ```bash
@@ -100,7 +108,9 @@ O projeto possui sete testes automatizados, cobrindo:
 **Resultado validado durante o desenvolvimento: 7 testes aprovados.**
 
 A evidência da execução está disponível em `06-testes/resultado-testes.txt`.
+**Resultado atual:** 11 testes aprovados.
 
+Os testes validam a correlação de eventos, a identificação de comandos registrados, a geração da linha do tempo, a exportação CSV e a geração do relatório final.
 ## Limitações
 
 - Os eventos são fictícios e foram criados para treinamento.

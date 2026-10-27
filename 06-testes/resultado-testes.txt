@@ -3,16 +3,18 @@ platform linux -- Python 3.13.12, pytest-9.0.3, pluggy-1.6.0 -- /usr/bin/python3
 cachedir: .pytest_cache
 rootdir: /home/kali/BlueTeam-Incident-Investigation
 plugins: anyio-4.12.1, typeguard-4.4.4
-collecting ... collected 9 items
+collecting ... collected 11 items
 
-06-testes/test_correlacionar_eventos.py::test_detecta_tres_falhas_e_login_aceito PASSED [ 11%]
-06-testes/test_correlacionar_eventos.py::test_nao_alerta_com_duas_falhas PASSED [ 22%]
-06-testes/test_correlacionar_eventos.py::test_nao_correlaciona_login_de_outro_ip PASSED [ 33%]
-06-testes/test_correlacionar_eventos.py::test_identifica_comandos_registrados PASSED [ 44%]
-06-testes/test_exportar_relatorio_csv.py::test_exporta_indicador_com_login_aceito PASSED [ 55%]
-06-testes/test_exportar_relatorio_csv.py::test_csv_sem_indicadores_contem_apenas_cabecalho PASSED [ 66%]
-06-testes/test_gerar_linha_tempo.py::test_le_evento_com_data_valida PASSED [ 77%]
-06-testes/test_gerar_linha_tempo.py::test_ignora_linha_sem_data_valida PASSED [ 88%]
-06-testes/test_gerar_linha_tempo.py::test_le_multiplos_eventos_em_ordem_de_arquivo PASSED [100%]
+06-testes/test_correlacionar_eventos.py::test_detecta_tres_falhas_e_login_aceito PASSED [  9%]
+06-testes/test_correlacionar_eventos.py::test_nao_alerta_com_duas_falhas PASSED [ 18%]
+06-testes/test_correlacionar_eventos.py::test_nao_correlaciona_login_de_outro_ip PASSED [ 27%]
+06-testes/test_correlacionar_eventos.py::test_identifica_comandos_registrados PASSED [ 36%]
+06-testes/test_exportar_relatorio_csv.py::test_exporta_indicador_com_login_aceito PASSED [ 45%]
+06-testes/test_exportar_relatorio_csv.py::test_csv_sem_indicadores_contem_apenas_cabecalho PASSED [ 54%]
+06-testes/test_gerar_linha_tempo.py::test_le_evento_com_data_valida PASSED [ 63%]
+06-testes/test_gerar_linha_tempo.py::test_ignora_linha_sem_data_valida PASSED [ 72%]
+06-testes/test_gerar_linha_tempo.py::test_le_multiplos_eventos_em_ordem_de_arquivo PASSED [ 81%]
+06-testes/test_gerar_relatorio_final.py::test_relatorio_inclui_indicador_e_login PASSED [ 90%]
+06-testes/test_gerar_relatorio_final.py::test_relatorio_sem_indicadores PASSED [100%]
 
-============================== 9 passed in 0.02s ===============================
+============================== 11 passed in 0.02s ==============================
